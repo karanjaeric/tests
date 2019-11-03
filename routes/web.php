@@ -15,9 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('portalpages.dashboard');
-});
+Route::get('/dashboard', 'HomeController@chart'); 
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

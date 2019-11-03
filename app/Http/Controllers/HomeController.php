@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function chart()
+    {
+        $a = 10; $b = 20; $c = 30; $d = 40; $e = 50;
+        return view('layouts.dashboard',compact('a','b','c','d','e'));
+    }
 }
